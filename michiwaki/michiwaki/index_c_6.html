@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+                <style></style>
+            </head>
+            <body>
+                <style>
+   #example {
+    position: relative;
+    width: 75%;
+    height: 280px;
+
+  }
+  .one, .two, .three {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+   .one  {
+    z-index: 20;
+    background-color: #f5dcdc;
+    width: 550px;
+    height: 250px; 
+  }
+   .one-text {
+     position: absolute;
+     top: 0;
+     left: 0;
+     margin: 10px;
+     }
+
+  .two {
+    z-index: 40;
+    background-color: #d400ff;
+    width: 400px;
+    height: 150px;
+  }
+  .three {
+    z-index: 50;
+    background-color: #A52A;
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    color: pink;
+    font-size: 30px;
+    line-height: 100px;
+  }
+</style>
+
+<div id="example">
+<div class="one">
+  <span class="one-text">背景表示</span>
+</div>
+
+  <div class="two"></div>
+  <div class="three">ロゴ表示</div>
+</div>
+                <script></script>
+            
+        
+    </body>
