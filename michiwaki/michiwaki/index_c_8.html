@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+                <style></style>
+            </head>
+            <body>
+                
+
+
+<title>プロフィール入力フォーム</title>
+  <style>
+    .tittle {
+     font-size: 20px;
+     margin: 10px;
+    }
+
+    input:required,select:required {
+      border: 2px solid #ff7d6e;
+      background-color: #fff5f5;
+
+    }
+
+    label {
+      display: block;
+      margin: 5px;
+      padding: 1px;
+      font-size: 15px;
+    }
+
+  </style>
+
+  
+    <div class="tittle">アンケート</div>
+
+    <form>
+      <label>氏名（必須）</label>
+      <input type="text" name="name" required="">
+
+      <label>年齢（必須）</label>
+      <input type="number" name="age" required="">
+
+      <label>性別（必須）</label>
+      <select name="gender" required="">
+        <option value="">選択してください</option>
+        <option value="male">男性</option>
+        <option value="female">女性</option>
+        <option value="other">その他</option>
+      </select>
+
+      <label>好きなアーティスト（必須）</label>
+      <input type="text" name="artist" required="">
+
+      <br><br>
+      <input type="submit" name="btn1" value="送信">
+    </form>
+  
+
+                <script></script>
+            
+        
+    </body>
