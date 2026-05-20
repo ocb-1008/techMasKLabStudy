@@ -1,0 +1,301 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav.navbar {
+  margin-bottom: 0;
+  padding: 0;
+  font-family: 'Yu Mincho','YuMincho','Yu Mincho','游明朝体',sans-serif;
+  font-weight: bold;
+}
+
+.my-navbar {
+  background-color: #bddadf;
+}
+
+.my-navbar .navbar-brand,
+.my-navbar .nav-link {
+  color: #5e4d2f;
+}
+
+body {
+  font-family: "メイリオ", sans-serif;
+  line-height: 1.7;
+  color: #333;
+}
+
+.section {
+  width: 90%;
+  max-width: 1000px;
+  margin: 60px auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.header {
+  background: #811616;
+  padding: 10px 0;
+  text-align: center;
+}
+.header img {
+  width: 80%;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+}
+
+.main_img {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.main_img img {
+  width: 100%;
+  display: block;
+  object-fit: contain;
+  object-position: center;
+  height: 100%;
+}
+
+.notice {
+  color: #b5360f;
+  border: 1px solid #b5360f;
+  padding: 30px;
+  text-align: center;
+  margin: 0 auto;
+  width: 90%;
+  line-height: 2em;
+  font-family: 'Yu Mincho','YuMincho','Yu Mincho','游明朝体',sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.notice p.number {
+  text-align: left;
+  padding-left: 1em;
+  margin: 0 auto;
+  width: 85%;
+}
+
+.intro-text {
+  text-align: center;
+  font-family: serif;
+  line-height: 1.8;
+  font-weight: bold;
+}
+.intro-text p {
+  margin-bottom: 20px;
+}
+.intro-text span {
+  font-weight: bold;
+  color: #c40000;
+  font-size: 20px;
+}
+
+.cam_bnr {
+  background: #e3d9c6;
+  padding: 30px 0;
+  width: 100%;
+}
+
+.cam_bnr img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.kodawari-title p {
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: serif;
+  font-weight: bold;
+}
+
+.kodawari-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 60px;
+  margin: 0 auto;
+}
+.koda {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 80px;
+  max-width: 1200px;
+}
+
+.koda .main-img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+.koda .left .main-img {
+  object-position: left center;
+}
+.koda .right .main-img {
+  object-position: right center;
+}
+
+.koda .decor-img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 140px;
+  height: auto;
+  object-fit: contain;
+}
+
+.koda .decor-img.left {
+  left: -125px;
+}
+.koda .decor-img.right {
+  right: -125px;
+}
+
+#tea-types {
+  background: #f5f1eb;
+  width: 100%;
+  padding: 60px 0;
+}
+
+.tea-title img {
+  display: block;
+  max-width: none;
+  margin: 0 auto 30px;
+  width: 550px;
+  height: auto;
+}
+.tea-title p {
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: 'Yu Mincho','YuMincho','Yu Mincho','游明朝体',sans-serif;
+  font-weight: 500;
+  line-height: 1.8;
+}
+
+.tea-block {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+  margin-bottom: 60px;
+  align-items: center;
+  font-family: 'Yu Mincho','YuMincho','Yu Mincho','游明朝体',sans-serif;
+  font-weight: bold;
+}
+
+.tea-text {
+  max-width: 650px;
+  line-height: 1.8;
+  flex: none;
+}
+
+.tea-text span {
+  background: #fffc4f;
+}
+
+.tea-img {
+  flex: 2;
+}
+
+.jyukucha_tokuchou {
+  font-family: 'Yu Mincho','YuMincho','Yu Mincho','游明朝体',sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  border: 1px solid #663b2b;
+  border-radius: 6px;
+  color: #663b2b;
+  padding: 20px 30px;
+  width: 100%;
+}
+
+.namacha_tokuchou {
+  font-family: 'Yu Mincho Light','YuMincho','Yu Mincho','游明朝体',sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  border: 1px solid #1f6019;
+  color: #1f6019;
+  border-radius: 10px;
+  padding: 20px 30px;
+  width: 100%;
+}
+
+.roucha_tokuchou {
+  font-family: 'Yu Mincho Light','YuMincho','Yu Mincho','游明朝体',sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  border: 1px solid #453314;
+  color: #453314;
+  border-radius: 10px;
+  padding: 20px 30px;
+  width: 100%;
+}
+
+.beauty-title img {
+  display: block;
+  margin: 0 auto;
+}
+.beauty-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.beauty-text {
+  font-family: 'Yu Mincho Light','YuMincho','Yu Mincho','游明朝体',sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.beauty-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  list-style: none;
+  font-family: 'Yu Mincho Light','YuMincho','Yu Mincho','游明朝体',sans-serif;
+  font-weight: 500;
+}
+
+.beauty-item {
+  text-align: center;
+}
+
+.beauty-item .text {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.footer_link_small {
+  text-align: center;
+  margin-top: 30px;
+  background: #ffffff;
+  font-size: 10px;
+}
+
+.link_list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  font-size: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.footer_bottom {
+  font-size: 10px;
+  text-align: center;
+  font-family: serif;
+  font-weight: bold;
+}
