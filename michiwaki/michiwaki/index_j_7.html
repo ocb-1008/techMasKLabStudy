@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+                <style></style>
+            </head>
+            <body>
+                
+                <script>  const names = ['山田さん','佐藤さん','内田さん'];
+
+  console.log('最初に配列の値を表示します。'); /*　繰り返し処理で配列の中身を全て表示 */
+  for(let i = 0 ; i < 3 ; i++){
+  console.log(names[i]);
+  }
+
+  while (names.length > 0){
+    const shiftnames  = names.shift(); /* 配列の最初の値を削除します */
+    console.log('配列の値を1つ消します。');
+    console.log(shiftnames + 'を消しました。'); /*　削除した値を表示します */
+    if (names.length !== 0){         /*　中身がまだある時に実行 */
+      console.log('残りを表示します。');
+      for(let i = 0 ; i < names.length ; i++){
+        console.log(names[i]);
+      }
+    }else{               /*　中身がない時に実行 */
+      console.log("データがなくなりました。");
+    }
+
+  }</script>
+            
+        
+    </body>
