@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+                <style></style>
+            </head>
+            <body>
+                
+                <script>alert("XXを関数で確認します");　/* ① */
+
+/* ② */
+function fourcheck(value) {
+    if (value >= 4){
+        console.log("値は4以上です。");
+    }
+    else  {
+        console.log("値は4未満です");
+    } /* 値は４以上です。　値は４未満です。をConsole.logで表示 */
+}
+
+/* ③ */
+function tencheck(value) {
+    if (value >=10){
+        console.log("値は10以上です。");
+    }
+    else {
+        console.log("値は10未満です。");
+    } /* 値は１０以上です。　値は１０未満です。をConsole.logで表示 */
+}
+
+/* ④数値5を入力する変数を定義 */
+let value = 5;
+/* ⑤表示させる */
+fourcheck(value);
+tencheck(value);
+</script>
+            
+        
+    </body>
