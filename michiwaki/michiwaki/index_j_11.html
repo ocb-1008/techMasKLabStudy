@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+                <style></style>
+            </head>
+            <body>
+                
+                <script>
+//関数の定義
+function now_time() {
+  // 現在時間を取得
+  const now = new Date();
+  // 取得した現在時間の情報から「時間」を取得
+  let hour = now.getHours();
+  // 取得した現在時間の情報から「分」を取得
+  let minute = now.getMinutes();
+  // 取得した現在時間の情報から「秒」を取得
+  let second = now.getSeconds();
+
+  //取得してそのまま値を使用すると、日時が一桁の時、一桁で表示されてしまうため変換して表示する
+
+  //以下if文を使用
+  //もし、「時間」が10より小さい時、「時間」を'0'+「時間」に変換
+  if (hour < 10){
+    hour = '0' + hour;
+  }
+  //もし、「分」が10より小さい時、「分」を'0'+「分」に変換
+  if (minute < 10){
+    minute = '0' + minute;
+  }
+  //もし、「秒」が10より小さい時、「秒」を'0'+「秒」に変換
+  if (second < 10){
+    second = '0' + second;
+  }
+
+  //コンソールに表示
+  console.log(hour + ":" + minute + ":" + second);
+}
+
+setInterval(now_time, 1000);</script>
+            
+        
+    </body>
