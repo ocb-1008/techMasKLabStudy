@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+                <style></style>
+            </head>
+            <body>
+                
+
+
+    <meta charset="UTF-8">
+
+
+ 
+
+  <ul class="list-group">
+   <li class="list-group-item">100</li>
+   <li class="list-group-item">110</li>
+   <li class="list-group-item">120</li>
+   <li class="list-group-item">130</li>
+   <li class="list-group-item">140</li>
+  </ul>
+  
+  <button class="change">変更</button>
+  <button class="reset">リセット</button>
+                <script>
+// ul要素を取得
+var ulElement = document.querySelector('ul');
+
+// ul要素の子要素であるli要素を取得
+var listItems = document.querySelectorAll('ul li');
+
+// 初期値を格納する配列を定義
+var defaultvalues = [];
+
+// 各li要素の初期値を取得して配列に格納
+listItems.forEach(function(li) {
+  defaultvalues.push(parseInt(li.textContent)); 
+}); 
+
+// 変更ボタン
+document.querySelector('.change').addEventListener('click', function() {
+  /* クラス名からliの要素を取得する */
+  var listItems = document.querySelectorAll('ul li');
+  /* 要素の長さを取得してfor文(繰り返し処理)でまわす*/
+  for (var i = 0; i < listItems.length; i++) {
+ /* liの要素の値を取得して10を乗算するロジック */
+    var value = parseInt(listItems[i].textContent);
+    listItems[i].textContent = value * 10;
+  }
+});
+
+// リセットボタン
+document.querySelector('.reset').addEventListener('click',function() {
+  /* クラス名からliの要素を取得する */
+  var listItems = document.querySelectorAll('ul li');
+  /* 手順1で作成した初期の値が入った配列を読み込んで、各要素に返すロジックを作成 */
+  listItems.forEach(function(item, index) {
+    item.textContent = defaultvalues[index];
+  });
+});
+</script>
+            
+        
+    </body>
