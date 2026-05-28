@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+                <style></style>
+            </head>
+            <body onload="test();">
+                
+
+
+  <meta charset="UTF-8">
+  <title>Animation</title>
+
+
+ 
+    <h2>Canvasでアニメーションを描く</h2>
+    <p>図形を表示するには、canvasタグをサポートしたブラウザが必要です。</p>
+    <canvas id="canvas" width="500" height="500"></canvas>
+  
+
+                <script>
+    var canvas = document.getElementById('canvas');
+    var ctx = canvas.getContext('2d');
+    var image = new Image();
+    var imgUrl = "https://techup.tokyo/wp-content/uploads/2022/05/gosticon.png";
+
+    // 画像がロードされた後に描画を開始する
+    image.onload = function() {
+      /* canvas要素の横の長さを指定-① */
+      canvas.width = 500;
+      /* canvas要素の縦の長さを指定 */
+      canvas.height = 500;
+      /*　横の座標を指定（①の半分の長さ）*/
+      var centerX = canvas.width / 2;
+      /*　横の座標を指定（②の半分の長さ）*/
+      var centerY = canvas.height / 2;
+      /* 半径を定義 */
+      var radius =  150;
+      /* 角度の定義-③ */
+      var angle = 0;
+
+      // アニメーションを開始する関数
+      function animate() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height); // Canvasをクリア_以前に描画された全ての内容が消去され、新しい描画を開始する
+
+        // 画像を円の周りに描画
+        var x = centerX + Math.cos(angle) * radius;
+        var y = centerY + Math.sin(angle) * radius;
+        ctx.drawImage(image, x, y, 60, 60);
+
+        // 画像を回転させるために角度を更新
+        angle += 0.02;
+
+        // アニメーションを続ける
+        requestAnimationFrame(animate);
+      }
+
+      // アニメーションを開始
+      animate();
+    };
+
+    // 画像の読み込みを開始
+    image.src = imgUrl;</script>
+            
+        
+    </body>
