@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>カウントダウンタイマー</title>
+  <link rel = "stylesheet" href = "css/style.css">
+</head>
+
+ <body>
+    <h1 class="title">2027年まであと...⭐</h1>
+    <br>
+    <!-- タイマー全体 -->
+    <div class="timer">
+        <!--時間-->
+        <div class="time-box">
+            <div id="hour" class="number"></div>
+            <div class="label">hours</div>
+        </div>
+    
+         <!--分-->
+        <div class="time-box">
+            <div id="min" class="number"></div>
+            <div class="label">minutes</div>
+        </div>
+
+        <!--秒-->
+        <div class="time-box">
+            <div id="sec" class="number"></div>
+            <div class="label">seconds</div>
+        </div>
+    </div>
+
+    <!--年越し後メッセージ-->
+    <div id="message"></div>
+
+    <!--jsファイル読み込み-->
+    <script src="js/time.js"></script>
+
+  </body>
+</html>
