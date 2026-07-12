@@ -33,6 +33,8 @@ require_once 'Dripper.php';
     print('<br>');
 
     //紅茶を注いでみる
+    print('ミルクを注ぐ機能：ON');
+    $dripper->setMilkStatus(true);
     print('紅茶をセットして注ぎます。<br>');
     print($dripper->dripDrink($tea) . '<br>');
     print('<br>');
