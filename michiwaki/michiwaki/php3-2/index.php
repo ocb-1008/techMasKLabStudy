@@ -26,3 +26,13 @@ $result = singleNumberSorted($array);
 foreach ($result as $value) {
     echo $value . "<br>";
 }
+
+//出現回数を取得
+$counts = array_count_values($array);
+//「２回出現した数値は◯◯です。」と表示
+foreach ($counts as $num => $count) {
+    if ($count === 2) {
+        echo "２回出現した数値は" . $num . "です。<br>";
+    }
+}
+
